@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		32158577207DAEB3003CD29F /* DrawableCanvasKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 32158575207DAEB3003CD29F /* DrawableCanvasKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32158580207DAED1003CD29F /* DrawableCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3215857E207DAED1003CD29F /* DrawableCanvas.swift */; };
+		32751F082083C291003AEC8E /* CodeInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32751F062083C291003AEC8E /* CodeInjection.swift */; };
+		32751F092083C291003AEC8E /* FileHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32751F072083C291003AEC8E /* FileHandling.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		32158572207DAEB3003CD29F /* DrawableCanvasKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DrawableCanvasKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32158575207DAEB3003CD29F /* DrawableCanvasKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawableCanvasKit.h; sourceTree = "<group>"; };
 		32158576207DAEB3003CD29F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3215857E207DAED1003CD29F /* DrawableCanvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawableCanvas.swift; sourceTree = "<group>"; };
+		32751F062083C291003AEC8E /* CodeInjection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeInjection.swift; sourceTree = "<group>"; };
+		32751F072083C291003AEC8E /* FileHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHandling.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +52,9 @@
 		32158574207DAEB3003CD29F /* DrawableCanvasKit */ = {
 			isa = PBXGroup;
 			children = (
+				3215857E207DAED1003CD29F /* DrawableCanvas.swift */,
+				32751F062083C291003AEC8E /* CodeInjection.swift */,
+				32751F072083C291003AEC8E /* FileHandling.swift */,
 				32158575207DAEB3003CD29F /* DrawableCanvasKit.h */,
 				32158576207DAEB3003CD29F /* Info.plist */,
 			);
@@ -95,6 +104,7 @@
 				TargetAttributes = {
 					32158571207DAEB3003CD29F = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32158580207DAED1003CD29F /* DrawableCanvas.swift in Sources */,
+				32751F092083C291003AEC8E /* FileHandling.swift in Sources */,
+				32751F082083C291003AEC8E /* CodeInjection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +265,7 @@
 		3215857B207DAEB3003CD29F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -267,6 +281,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = rationum.com.DrawableCanvasKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -274,6 +289,7 @@
 		3215857C207DAEB3003CD29F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
