@@ -1,5 +1,5 @@
 # DrawableCanvasKit
-A WebView-hosted Canvas element, along with some convenience methods for injecting and evaluating .js and .html scripts.
+A WKWebView-hosted Canvas element, along with some convenience methods for injecting and evaluating .js and .html scripts.
 
 Also includes some useful file-handling methods as Swift extensions for URL, String, and FileManager:
  
